@@ -6,6 +6,8 @@
   <title>Antok Spet - Bengkel Cat Mobil</title>
   <link rel="stylesheet" href="src/style.css" />
   <link rel="shortcut icon" href="src/images/logo-antokspet.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
   <div id="app">
@@ -16,7 +18,7 @@
           <div class="nav-content">
             <div class="brand-name">
               <a href="index.html" class="brand-link">
-                <img src="src/images/logo-antokspet.png" alt="Antok Spet Logo" class="brand-logo">
+                <img src="src/images/logo-antokspet.svg" alt="Antok Spet Logo" class="brand-logo">
                 <span>Antok Spet</span>
               </a>
             </div>
@@ -34,17 +36,18 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero hero-home">
+    <header class="hero hero-home" >
       <div class="container">
         <div class="jumbotron">
           <div class="inner-jumbotron">
-            <h1>Bengkel Cat Mobil & Body Repair Terpercaya di Surabaya</h1>
+            <h1>Bengkel Spesialis Cat Mobil di Surabaya</h1>
             <p>
-              Antok Spet telah melayani <strong>las dodok, body repair, cat duco, dan cat oven</strong> <br> 
-              berpengalaman <strong>Profesional</strong> selama lebih dari 15 tahun dengan kualitas terbaik untuk kendaraan Anda.
+              <strong>Antok Spet</strong> adalah bengkel spesialis <strong>cat body mobil</strong> dengan kualitas profesional.  
+              Kami juga melayani <strong>body repair, repaint body, poles body</strong>, serta pengecatan dengan bahan <strong>duco & oven</strong>.  
+              Berpengalaman lebih dari <strong>15 tahun</strong> dengan hasil yang rapi, halus, dan tahan lama.
             </p>
             <div class="cta-buttons" style="margin-top:20px;">
-              <a href="#booking" class="btn">Booking Sekarang</a>
+              <a href="#booking" class="btn">Booking Sekarang!</a>
             </div>
           </div>
         </div>
@@ -52,34 +55,34 @@
     </header>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section id="services" class="services-section" data-aos="fade-up">
       <div class="container">
         <h1>Layanan Kami</h1>
         <div class="services-container">
           <div class="service-card">
-            <h3>🔧 Las Dodok</h3>
-            <p>Perbaikan rangka dan bodi kendaraan dengan teknik las berkualitas.</p>
+            <h3>Body Repair</h3>
+            <p>Perbaikan kerusakan pada bodi mobil agar kembali ke bentuk semula dengan hasil rapi.</p>
           </div>
           <div class="service-card">
-            <h3>🚗 Body Repair</h3>
-            <p>Mengembalikan bentuk mobil Anda ke kondisi semula dengan hasil rapi.</p>
+            <h3> Poles Body</h3>
+            <p>Poles body dapat mengurangi atau menghilangkan goresan-goresan kecil pada permukaan cat kendaraan.</p>
           </div>
           <div class="service-card">
-            <h3>🎨 Cat Duco</h3>
-            <p>Pengecatan berkualitas tinggi dengan warna tahan lama dan mengkilap.</p>
+            <h3>Cat Body Mobil</h3>
+            <p>Spesialis cat body mobil dengan hasil mengkilap, halus, dan tahan lama.</p>
           </div>
           <div class="service-card">
-            <h3>🔥 Cat Oven</h3>
-            <p>Proses cat menggunakan oven untuk hasil lebih halus dan awet.</p>
+            <h3>Repaint Body</h3>
+            <p>Cat ulang sebagian atau full body mobil dengan bahan duco/oven berkualitas.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Booking Section -->
-    <section id="booking" class="booking-section">
+    <section id="booking" class="booking-section" data-aos="fade-up">
       <div class="booking-container">
-        <h2>Form Booking</h2>
+        <h1>Form Booking</h1>
         <p>Isi data berikut untuk melakukan booking jasa kami.</p>
 
         <form id="bookingForm" class="booking-form">
@@ -98,8 +101,10 @@
             <select id="service" name="service" required>
               <option value="" disabled selected>Pilih layanan</option>
               <option value="Body Repair">Body Repair</option>
-              <option value="Cat Ulang">Cat Ulang</option>
-              <option value="Salon Mobil">Salon Mobil</option>
+              <option value="Repaint Body (Sebagian)">Repaint Body (Sebagian)</option>
+              <option value="Repaint Body (Full)">Repaint Body (Full)</option>
+              <option value="Poles Body">Poles Body</option>
+              <option value="Ketok Magic">Ketok Magic</option>
             </select>
           </div>
 
@@ -113,31 +118,32 @@
             <textarea id="message" name="message" placeholder="Tambahkan catatan..."></textarea>
           </div>
 
-          <button type="submit" class="btn-submit">Booking Sekarang</button>
+          <button type="submit" class="btn-submit">Booking Sekarang!</button>
         </form>
       </div>
     </section>
 
     <!-- WhatsApp Direct Section -->
-    <section id="contact" class="whatsapp-section">
+    <section id="contact" class="whatsapp-section" data-aos="fade-up">
       <div class="container">
         <h1>Hubungi Kami Langsung</h1>
         <p>
-          Tidak sempat isi form? atau mau tanya tanya dulu? boleh kok! <br> Klik tombol di bawah untuk langsung chat dengan tim kami di WhatsApp.
+          Tidak sempat isi form? atau ingin konsultasi dulu? <br>
+          Klik tombol di bawah untuk langsung chat dengan <strong>Bengkel Spesialis Cat Body Mobil Antok Spet</strong> via WhatsApp.
         </p>
         <div class="cta-buttons" style="margin-top:20px;">
-          <a href="https://wa.me/6281231666758" target="_blank" class="btn">
-            💬 Chat via WhatsApp
+          <a href="https://wa.me/6281231666758" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Chat via WhatsApp
           </a>
         </div>
       </div>
     </section>
 
     <!-- Map Section -->
-    <section id="lokasi" class="map-section">
+    <section id="lokasi" class="map-section" data-aos="fade-up">
       <div class="container">
         <h1>Lokasi Bengkel</h1>
-        <p>Temukan kami dengan mudah melalui Google Maps.</p>
+        <p>Kunjungi langsung bengkel kami di Surabaya melalui Google Maps berikut.</p>
         <div class="map-container">
           <!-- Embed Map Google -->
            <iframe 
@@ -153,7 +159,7 @@
         <hr class="footer-divider" />
         <div class="main-footer">
           <div class="copyright">
-            © 2025 Antok Spet • Bengkel Cat Mobil & Body Repair Profesionalx di Surabaya.
+            © 2025 Antok Spet • Bengkel Spesialis Cat Mobil & Body Repair di Surabaya.
           </div>
           <div class="policies">
             <a href="#" class="remove-style-link">Terms</a>
@@ -166,6 +172,13 @@
   </div>
 
   <script src="src/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,   // durasi animasi (ms)
+        once: true,       // hanya sekali animasi
+      });
+    </script>
 
 </body>
 </html>

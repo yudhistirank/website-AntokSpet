@@ -12,6 +12,22 @@ body {
   background: #fafafa;
 }
 
+/* Style Section Titles */
+section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center; 
+  color: #222;
+}
+
+/* Untuk tampilan desktop (lebih besar lagi) */
+@media (min-width: 1024px) {
+  section h2 {
+    font-size: 2.8rem;
+  }
+}
+
 /* ===== Container ===== */
 .container {
   width: 90%;
@@ -44,6 +60,39 @@ nav {
   text-decoration: none;
   color: #333;    
   font-weight: 500;
+  font-weight: bold;
+}
+
+/* Style umum navbar link */
+nav ul li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+/* Efek underline animasi */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  bottom: 0;
+  background: #007bff; /* warna highlight (bisa diganti) */
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* Saat hover */
+nav ul li a:hover {
+  color: #007bff; /* teks berubah */
+}
+
+nav ul li a:hover::after {
+  width: 100%; /* garis muncul */
 }
 
 .brand-link {
@@ -51,7 +100,7 @@ nav {
   align-items: center;
   text-decoration: none;
   color: #222;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -85,7 +134,7 @@ nav {
 
 /* Buttons General */
 .btn {
-  background: #2c306d;
+  background: #007bff;
   color: #fff;
   padding: 12px 24px;
   border-radius: 6px;
@@ -266,6 +315,25 @@ nav {
   background: #1ebe57;
 }
 
+/* WhatsApp Button */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25d366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebd5a;
+}
+
 /* ===== Map Section ===== */
 .map-section {
   padding: 60px 0;
@@ -335,4 +403,24 @@ footer {
   .hamburger {
     display: block;
   }
+}
+
+/* Efek hover pada card layanan */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek judul saat hover */
+section h1 {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+section h1:hover {
+  color: #007bff;
+  transform: scale(1.05);
 }

@@ -25,8 +25,8 @@ form.addEventListener("submit", async (e) => {
     }
 
     // Redirect ke WhatsApp
-    const phoneNumber = "62895372255070"; // ganti nomor WA admin
-    const waText = `Halo Antok Spet,%0ASaya *${data.name}* ingin booking jasa *${data.service}* pada tanggal *${data.date}*.%0ANo HP: ${data.phone}%0APesan: ${data.message || "-"}%0A%0ATerima kasih 🙏`;
+    const phoneNumber = "6281231666758";
+    const waText = `Halo Antok Spet,%0ASaya *${data.name}* ingin booking jasa *${data.service}* pada tanggal *${data.date}*.%0A*No HP: ${data.phone}*%0A*Pesan:* ${data.message || "-"}%0A%0ATerima kasih 🙏`;
     
     window.location.href = `https://wa.me/${phoneNumber}?text=${waText}`;
   } catch (err) {
