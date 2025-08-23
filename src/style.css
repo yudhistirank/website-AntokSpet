@@ -33,7 +33,7 @@ nav {
 }
 
 .nav-list {
-  list-style: none;   /* 🔥 hilangin titik */
+  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -67,9 +67,9 @@ nav {
 /* ===== Hero Section ===== */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-              url("../src/images/hero.webp") center/cover no-repeat;
+              url("../src/images/hero.jpg") center/cover no-repeat;
   color: #fff;
-  padding: 260px 0;
+  padding: 230px 0;
   text-align: center;
 }
 
@@ -158,7 +158,7 @@ nav {
 
 /* Booking Section */
 .booking-section {
-  padding: 60px 20px;
+  padding: 65px 20px;
   background: #f5f7fa;
   display: flex;
   justify-content: center;
