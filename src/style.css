@@ -88,7 +88,7 @@ nav ul li a::after {
 
 /* Saat hover */
 nav ul li a:hover {
-  color: #007bff; /* teks berubah */
+  color: #007bff;
 }
 
 nav ul li a:hover::after {
@@ -107,10 +107,6 @@ nav ul li a:hover::after {
 .brand-logo {
   height: 60px;
   margin-right: 10px;
-}
-
-.nav-list li a:hover {
-  color: #2c306d;
 }
 
 /* ===== Hero Section ===== */
