@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antok Spet - Bengkel Cat Mobil</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="shortcut icon" href="src/images/logo-antokspet.png" type="image/x-icon" />
+</head>
+<body>
+  <div id="app">
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-container">
+        <div class="container">
+          <div class="nav-content">
+            <div class="brand-name">
+              <a href="index.html" class="brand-link">
+                <img src="src/images/logo-antokspet.png" alt="Antok Spet Logo" class="brand-logo">
+                <span>Antok Spet</span>
+              </a>
+            </div>
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <ul class="nav-list" id="nav-list">
+              <li><a href="#services">Layanan</a></li>
+              <li><a href="#booking">Booking</a></li>
+              <li><a href="#contact">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero hero-home">
+      <div class="container">
+        <div class="jumbotron">
+          <div class="inner-jumbotron">
+            <h1>Bengkel Cat Mobil & Body Repair Terpercaya di Surabaya</h1>
+            <p>
+              Antok Spet telah melayani <strong>las dodok, body repair, cat duco, dan cat oven</strong> <br> 
+              berpengalaman <strong>Profesional</strong> selama lebih dari 15 tahun dengan kualitas terbaik untuk kendaraan Anda.
+            </p>
+            <div class="cta-buttons" style="margin-top:20px;">
+              <a href="#booking" class="btn">Booking Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <h1>Layanan Kami</h1>
+        <div class="services-container">
+          <div class="service-card">
+            <h3>🔧 Las Dodok</h3>
+            <p>Perbaikan rangka dan bodi kendaraan dengan teknik las berkualitas.</p>
+          </div>
+          <div class="service-card">
+            <h3>🚗 Body Repair</h3>
+            <p>Mengembalikan bentuk mobil Anda ke kondisi semula dengan hasil rapi.</p>
+          </div>
+          <div class="service-card">
+            <h3>🎨 Cat Duco</h3>
+            <p>Pengecatan berkualitas tinggi dengan warna tahan lama dan mengkilap.</p>
+          </div>
+          <div class="service-card">
+            <h3>🔥 Cat Oven</h3>
+            <p>Proses cat menggunakan oven untuk hasil lebih halus dan awet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+      <div class="booking-container">
+        <h2>Form Booking</h2>
+        <p>Isi data berikut untuk melakukan booking jasa kami.</p>
+
+        <form id="bookingForm" class="booking-form">
+          <div class="form-group">
+            <label for="name">Nama*</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">No. HP*</label>
+            <input type="tel" id="phone" name="phone" placeholder="08xxxx" required />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Layanan*</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Pilih layanan</option>
+              <option value="Body Repair">Body Repair</option>
+              <option value="Cat Ulang">Cat Ulang</option>
+              <option value="Salon Mobil">Salon Mobil</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Tanggal Booking*</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" placeholder="Tambahkan catatan..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Booking Sekarang</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- WhatsApp Direct Section -->
+    <section id="whatsapp" class="whatsapp-section">
+      <div class="container">
+        <h1>Hubungi Kami Langsung</h1>
+        <p>
+          Tidak sempat isi form? Klik tombol di bawah untuk langsung chat dengan tim kami di WhatsApp.
+        </p>
+        <div class="cta-buttons" style="margin-top:20px;">
+          <a href="https://wa.me/62895372255070" target="_blank" class="btn">
+            💬 Chat via WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="contact" class="map-section">
+      <div class="container">
+        <h1>Lokasi Bengkel</h1>
+        <p>Temukan kami dengan mudah melalui Google Maps.</p>
+        <div class="map-container">
+          <!-- Embed Map Google -->
+           <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.209956963112!2d112.8035733!3d-7.330300900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb4861706885%3A0xab34b2336f876072!2sBengkel%20Cat%20Mobil%20(Antok%20Spet)!5e0!3m2!1sid!2sid!4v1755929835227!5m2!1sid!2sid" 
+           width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <hr class="footer-divider" />
+        <div class="main-footer">
+          <div class="copyright">
+            © 2025 Antok Spet • Bengkel Cat Mobil & Body Repair Profesional & Terpercaya di Surabaya.
+          </div>
+          <div class="policies">
+            <a href="#" class="remove-style-link">Terms</a>
+            <span class="">•</span>
+            <a href="#" class="remove-style-link">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="src/script.js"></script>
+
+</body>
+</html>
