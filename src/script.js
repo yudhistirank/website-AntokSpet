@@ -49,3 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error("❌ Hamburger or navList not found in DOM");
   }
 });
+
+// AOS Animation
+document.addEventListener("DOMContentLoaded", () => {
+  AOS.init({
+    duration: 1000,
+    once: false,    // false (loop), true (sekali)
+  });
+});
